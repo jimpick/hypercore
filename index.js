@@ -50,7 +50,6 @@ function Feed (createStorage, key, opts) {
   this.id = opts.id || crypto.randomBytes(32)
   this.live = opts.live !== false
   this.sparse = !!opts.sparse
-  this.broadcast = !!opts.broadcast
   this.length = 0
   this.byteLength = 0
   this.maxRequests = opts.maxRequests || 16
